@@ -1,0 +1,1162 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HGV41KW1ZC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-HGV41KW1ZC');
+</script>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords" content="Fondo para la Excelencia de la Educación y la Investigación, FEEI Paraguay, FEEI tablero, tablero del FEEI, FEEI, datos abiertos, FEEI datos">
+    <meta name="description" content="El tablero de seguimiento es un portal de datos abiertos del FEEI para la rendición de cuentas y el monitoreo de variables">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/style-home.css">
+    <link rel="stylesheet" href="assets/css/microtip.css">
+
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,700&display=swap" rel="stylesheet">
+
+    <!-- Ionic icons -->
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b48145bb29.js" crossorigin="anonymous"></script>
+
+    <title>FEEI | Tablero de Seguimiento </title>
+    <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico">
+</head>
+
+<body onload="load()">
+    <div class="d-flex" id="content-wrapper">
+        <!-- Sidebar -->
+        <!-- <div id="sidebar-container" class="bg-primary">
+            <div class="logo">
+                <h4 class="text-light font-weight-bold mb-0">Tablero de seguimiento</h4>
+            </div>
+            <div class="menu">
+                <a href="index.html#projects" class="d-block text-light p-3 border-0"><i class="icon ion-md-apps lead mr-2"></i>
+                    Inicio</a>
+            </div>
+        </div> -->
+        <!-- Fin sidebar -->
+
+        <div class="w-100">
+
+         <!-- Navbar -->
+         <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+            <div class="container">
+    
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+    
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <form class="form-inline position-relative d-inline-block my-2">
+                  <input class="form-control" type="hidden" placeholder="Buscar" aria-label="Buscar">
+                  <!-- <button class="btn position-absolute btn-search" type="submit"><i class="icon ion-md-search"></i></button> -->
+                </form>
+                <img src="assets/img/logo.jpg" alt="logo" width="100" height="50">
+                <!-- <img src="assets/img/logo-stp.png" alt="logo" width="180" style="
+                margin-left: 40px;
+            " height="70" /> -->
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                  <li class="nav-item dropdown">
+                    <!-- <a class="nav-link text-dark dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <img src="assets/img/profile.jpg" class="img-fluid rounded-circle avatar mr-2"
+                      alt="https://generated.photos/" />
+                    Francisco Aguilera
+                    </a> -->
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="#">Mi perfil</a>
+                      <!-- <a class="dropdown-item" href="#">Suscripciones</a> -->
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="index.html">Cerrar sesión</a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <!-- Fin Navbar -->
+          <div style="
+
+position: absolute;
+    width: 100%;
+    height: 82px;
+    left: 0;
+    top: 0px;
+    z-index: 2;
+    background: #1A5962;
+    
+    ">
+    <button style="/* Button */
+
+
+    /* Auto layout */display: flex;flex-direction: row;align-items: flex-start;padding: 13px 28px;gap: 0px;position: absolute;width: 215px;border: none;height: 50px;left: 120px;top: 16px;
+    
+    /* Off white */background: #F2F9FA;border-radius: 40px;">
+    <div style="/* eva:arrow-ios-back-fill */
+
+
+    width: 24px;
+    height: 24px;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;">
+    </div>
+    <a href="https://feei.gov.py/" style="width: 111px;
+    height: 24px;
+    
+    /* Btn */
+    
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+    
+    text-align: center;
+    
+    color: #004651;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 1;
+    flex-grow: 0;">
+        Volver al inicio
+    </a>
+    </button>
+    </div>
+          <div style="
+
+          position: absolute;
+              width: 100%;
+              height: 700px;
+              left: 0px;
+              top: 0;
+              z-index: 1;
+              background: linear-gradient(0deg, rgba(0, 70, 81, 0), rgba(0, 70, 81, 0)), url(assets/img/background_hero.png);
+              background-size:     cover;                      /* <------ */
+              background-repeat:   no-repeat;
+              ">
+            <div class="titlecontainer">
+                <div class="title">
+                <h1 class="titulo">Tablero de seguimiento</h1>
+            </div>
+                <button style="/* Button-Hero */
+        
+        
+                /* Auto layout */display: flex;flex-direction: row;align-items: flex-start;padding: 13px 35px;gap: 10px;position: absolute;width: 175px;height: 74px;left: 110px;top: 255px;border: none;
+                
+                /* 2 */background: #F26721;border-radius: 40px;"> <a href="#maitei" style="width: 129px;
+        height: 46px;
+        
+        font-family: 'Plus Jakarta Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 27px;
+        line-height: 24px;
+        /* or 89% */
+        
+        display: flex;
+        align-items: center;
+        text-align: center;
+        
+        color: #FFFFFF;
+        
+        
+        /* Inside auto layout */
+        
+        flex: none;
+        order: 0;
+        flex-grow: 0;">Ver más</a></button>
+            </div>
+        </div>
+
+        <h1 style="/* Inversión que cuenta */ position: absolute; width: 703px; height: 61px; left: 107px; top: 559px; font-family: 'Plus Jakarta Sans'; font-style: normal; font-weight: 600; font-size: 28px; line-height: 57px; display: flex; color: #FFFFFF;z-index: 1;"> Inversión que cuenta </h1>
+    <div style="/* Arrow 2 *//* box-sizing: border-box; */position: absolute;left: 405.53999999999996px;top: 594px;z-index: 1;">
+        <img src="assets/img/arrow_2.png" height="80px" width="50px">
+        </div>
+        <div style="/* Background-Numbers */position: relative;width: 100%;height: 250px;left: 0px;top: 619px;background-color: #019ba7;z-index: 1;">
+            <div class="row" style="width: 100%;position: relative;top: 50px;text-align: center;">
+                <div class="col-sm" style="
+    border-right: 0.1px solid white;
+">
+                   <p id="0101" class="fs-2 text-light" style="font-size: 60px; font-family: 'Plus Jakarta Sans'; font-style: normal; font-weight: 700; font-size: 70px; line-height: 88px;">10</p>
+                   <p class="text-light">años de la 
+                    creación del
+                    Fondo</p>
+                </div>
+                <div class="col-sm" style="
+    border-right: 0.1px solid white;
+">
+                   <p id="0102" class="fs-2 text-light" style="
+    font-size: 60px; font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 70px;
+line-height: 88px;
+">8</p>
+                   <p class="text-light">focos 
+                       de inversión</p>
+             </div>
+
+             <div class="col-sm" style="
+             border-right: 0.1px solid white;
+         ">
+                <p id="0104" class="fs-2 text-light" style="
+    font-size: 60px; font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 70px;
+line-height: 88px;
+">19</p>
+                <p class="text-light">programas y proyectos
+                    aprobados</p>
+          </div>
+          <div class="col-sm" >
+                      <p class="fs-2 text-light" style="
+          font-size: 60px; font-family: 'Plus Jakarta Sans';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 70px;
+      line-height: 88px;
+      ">+<span id="0103">700</span></p>
+                      <p class="text-light">millones de dólares
+                          comprometidos</p>
+                   </div>
+    </div>
+        <!-- Page Content -->
+        <div id="data" style="
+        position: relative;
+        top: 120px;
+    ">
+        <div id="content" class="bg-white w-100">
+              <section class="bg-light py-3">
+                <br>
+                  <div class="container">
+                      <div class="row">
+                          <div class="col-lg-9 col-md-8">
+                            <div id="maitei" class="descriptor">
+                                <span class="bienvenido">Bienvenidos al tablero de seguimiento del FEEI</span>
+                                <span class="spectator">En este tablero encontrarás <span style="color: #004651;">información clave, </span> dinámica, visual y sintética sobre los avance de ejecución de cada uno de los programas y proyectos que financia el Fondo. Los datos provienen de informes y reportes de monitoreo semestral, remitidos al FEEI por la Unidades Ejecutoras de Proyectos de las distintas instituciones.</span>
+                                <div style="
+                                position: relative;
+                                left: 800px;
+                                width: 443px;
+                                height: 370px;
+                                top: 80px;
+                            ">
+                                    <img src="assets/img/welcome.png" width="443px" height="370px">
+                                </div>
+                            </div>
+                            <!-- <h1 class="font-weight-bold mb-0">¡Bienvenido!</h1> -->
+                          </div>
+                          <!-- <div class="col-lg-3 col-md-4 d-flex">
+                            <button class="btn btn-primary w-100 align-self-center">Descargar reporte</button>
+                          </div> -->
+                      </div>
+                  </div>
+              </section>
+            <br>
+            <br>
+              <section class="bg-white py-3">
+                <div class="container">
+                    <!-- <p class="lead text-muted">¿Qué son de los recursos del Fondo? ¡Conózcalo!</p> -->
+                    <br>
+                    <div class="flourish-embed flourish-chart" data-src="visualisation/16617361"><script src="https://public.flourish.studio/resources/embed.js"></script></div> <div class="card rounded-0 bg-info">
+                        <div class="card-body">
+                        <div class="row">
+                        <div class="col-sm-8 d-flex stat my-3" style="
+                                                        padding-left: 60px;">
+                        <div>
+                        <h6 class="text-white">¿Cómo se usan los recursos del Fondo? ¡Conózcalo!</h6>
+                        <h3 class="font-weight-bold text-light">EL FEEI EN NÚMEROS
+                        </h3>
+                        
+                        </div>
+                        </div>
+                                <div class="col-sm-4 d-flex my-3" style="
+                                align-items: center;
+                            ">
+                                    <div class="mx-auto">
+                                      <a href="feei.html" class="btn btn-outline-light btn-lg" role="button">VER RESUMEN</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <div id="projects">
+                    <span style="font-family: 'Plus Jakarta Sans';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 25px;
+                    line-height: 57px;
+                    
+                    color: #004651;">Seleccione el <span style="color: #F26721;">programa o proyecto </span> de su interés para más detalles</span>
+                    <br>
+                    
+                    <!-- TIC-MEC -->
+                    <br>
+                    <div class="card rounded-0">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-sm-8 d-flex stat my-3" style="
+                                                    padding-left: 60px;">
+                                                        <div>
+                                                            <h6 class="text-muted">Unidad ejecutora: <span class="hover-UE" aria-label="Ministerio de Educación y Ciencias" data-microtip-position="top" role="tooltip">MEC</span></h6>
+                                                            <h3 class="font-weight-bold">Incorporación de TIC al sistema educativo
+                                                            </h3>
+                                                            <div class="row">
+                                                                <div class="col-md-auto">
+                                                                    <h6 class="text-success"><i class="icon ion-md-arrow-dropup-circle"></i> ACTIVO</h6>
+                    
+                                                                </div>
+                                                                <div class="col-md-auto">
+                                                                    <h6 class="text-orange"><i class="fa-solid fa-computer"></i> TIC</h6>
+                    
+                                                                </div>
+                                                            </div>                                      </div>
+                                                    </div>
+                                                    <div class="col-sm-4 d-flex my-3" style="
+                                                    align-items: center;
+                                                ">
+                                                        <div class="mx-auto">
+                                                          <a href="tic-mec.html" class="btn btn-primary-2 btn-lg" role="button">VER PROGRAMA</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                    </div>
+
+                    <!-- TIC-MITIC -->
+                    <br>
+                    <div class="card rounded-0">
+                                                                <div class="card-body">
+                                                                    <div class="row">
+                                                                        <div class="col-sm-8 d-flex stat my-3" style="
+                                                                        padding-left: 60px;">
+                                                                            <div>
+                                                                                <h6 class="text-muted">Unidad ejecutora: <span class="hover-UE" aria-label="Ministerio de Tecnología de la Información y la Comunicación" data-microtip-position="top" role="tooltip">MITIC</span></h6>
+                                                                                <h3 class="font-weight-bold">Conectividad en establecimientos educativos
+                                                                                </h3>
+                                                                                <div class="row">
+                                                                                    <div class="col-md-auto">
+                                                                                        <h6 class="text-success"><i class="icon ion-md-arrow-dropup-circle"></i> ACTIVO</h6>
+                                        
+                                                                                    </div>
+                                                                                    <div class="col-md-auto">
+                                                                                        <h6 class="text-orange"><i class="fa-solid fa-computer"></i> TIC</h6>
+                                        
+                                                                                    </div>
+                                                                                </div>                                      </div>
+                                                                        </div>
+                                                                        <div class="col-sm-4 d-flex my-3" style="
+                                                                        align-items: center;
+                                                                    ">
+                                                                            <div class="mx-auto">
+                                                                              <a href="tic-mitic.html" class="btn btn-primary-2 btn-lg" role="button">VER PROYECTO</a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                    </div>
+
+                    <!-- PROCEMA -->
+                    <br>
+                    <div class="card rounded-0">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-8 d-flex stat my-3" style="
+                                padding-left: 60px;">
+                                    <div>
+                                        <h6 class="text-muted">Unidad ejecutora: <span class="hover-UE" aria-label="Ministerio de Educación y Ciencias" data-microtip-position="top" role="tooltip">MEC</span></h6>
+                                        <h3 class="font-weight-bold">Capacitación de educadores - PROCEMA
+                                        </h3>
+                                        <div class="row">
+                                            <div class="col-md-auto">
+                                                <h6 class="text-success"><i class="icon ion-md-arrow-dropup-circle"></i> ACTIVO</h6>
+
+                                            </div>
+                                            <div class="col-md-auto">
+                                                <h6 class="text-orange"><i class="fa-solid fa-chalkboard-user"></i> FORMACIÓN DOCENTE</h6>
+
+                                            </div>
+                                        </div>                                      </div>
+                                </div>
+                                <div class="col-sm-4 d-flex my-3" style="
+                                align-items: center;
+                            ">
+                                    <div class="mx-auto">
+                                      <a href="procema.html" class="btn btn-primary-2 btn-lg" role="button">VER PROGRAMA</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                                        <!-- PROCEMA 2 -->
+                                        <br>
+                                        <div class="card rounded-0">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-sm-8 d-flex stat my-3" style="
+                                                    padding-left: 60px;">
+                                                        <div>
+                                                            <h6 class="text-muted">Unidad ejecutora: <span class="hover-UE" aria-label="Ministerio de Educación y Ciencias" data-microtip-position="top" role="tooltip">MEC</span></h6>
+                                                            <h3 class="font-weight-bold">Programa de capacitación de educadores del sector oficial - PROCAP
+                                                            </h3>
+                                                            <div class="row">
+                                                                <div class="col-md-auto">
+                                                                    <h6 class="text-success"><i class="icon ion-md-arrow-dropup-circle"></i> ACTIVO</h6>
+                    
+                                                                </div>
+                                                                <div class="col-md-auto">
+                                                                    <h6 class="text-orange"><i class="fa-solid fa-chalkboard-user"></i> FORMACIÓN DOCENTE</h6>
+                    
+                                                                </div>
+                                                            </div>                                      </div>
+                                                    </div>
+                                                    <div class="col-sm-4 d-flex my-3" style="
+                                                    align-items: center;
+                                                ">
+                                                        <div class="mx-auto">
+                                                          <a href="procap.html" class="btn btn-primary-2 btn-lg" role="button">VER PROGRAMA</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                    <!-- INFRA 108 -->
+                    <br>
+                    <div class="card rounded-0">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-8 d-flex stat my-3" style="
+                                padding-left: 60px;">
+                                    <div>
+                                        <h6 class="text-muted">Unidad ejecutora: <span class="hover-UE" aria-label="Ministerio de Educación y Ciencias" data-microtip-position="top" role="tooltip">MEC</span></h6>
+                                        <h3 class="font-weight-bold">Mejora de infraestructura en 108 establecimientos escolares
+                                        </h3>
+                                        <div class="row">
+                                            <div class="col-md-auto">
+                                                <h6 class="text-primary"><i class="icon ion-md-arrow-dropup-circle"></i> FINALIZADO</h6>
+
+
+                                            </div>
+                                            <div class="col-md-auto">
+                                                <h6 class="text-orange"><i class="fa-solid fa-school"></i> INFRAESTRUCTURA</h6>
+
+                                            </div>
+                                        </div>                                      </div>
+                                </div>
+                                <div class="col-sm-4 d-flex my-3" style="
+                                align-items: center;
+                            ">
+                                    <div class="mx-auto">
+                                      <a href="infraestructura_108.html" class="btn btn-primary-2 btn-lg" role="button">VER PROYECTO</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- INFRA 822 -->
+                    <br>
+                    <div class="card rounded-0">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-8 d-flex stat my-3" style="
+                                padding-left: 60px;">
+                                    <div>
+                                        <h6 class="text-muted">Unidad ejecutora: <span class="hover-UE" aria-label="Ministerio de Educación y Ciencias" data-microtip-position="top" role="tooltip">MEC</span></h6>
+                                        <h3 class="font-weight-bold">Mejora de infraestructura en 822 establecimientos escolares
+                                        </h3>
+                                        <div class="row">
+                                            <div class="col-md-auto">
+                                                <h6 class="text-success"><i class="icon ion-md-arrow-dropup-circle"></i> ACTIVO</h6>
+
+                                            </div>
+                                            <div class="col-md-auto">
+                                                <h6 class="text-orange"><i class="fa-solid fa-school"></i> INFRAESTRUCTURA</h6>
+
+                                            </div>
+                                        </div>                                      </div>
+                                </div>
+                                <div class="col-sm-4 d-flex my-3" style="
+                                align-items: center;
+                            ">
+                                    <div class="mx-auto">
+                                      <a href="infraestructura_822.html" class="btn btn-primary-2 btn-lg" role="button">VER PROYECTO</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- DOTACION -->
+                    <br>
+                    <div class="card rounded-0">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-8 d-flex stat my-3" style="
+                                padding-left: 60px;">
+                                    <div>
+                                        <h6 class="text-muted">Unidad ejecutora: <span class="hover-UE" aria-label="Ministerio de Educación y Ciencias" data-microtip-position="top" role="tooltip">MEC</span></h6>
+                                        <h3 class="font-weight-bold">Dotación de textos a estudiantes y guías didácticas a docentes
+                                        </h3>
+                                        <div class="row">
+                                            <div class="col-md-auto">
+                                                <h6 class="text-primary"><i class="icon ion-md-arrow-dropup-circle"></i> FINALIZADO</h6>
+
+                                            </div>
+                                            <div class="col-md-auto">
+                                                <h6 class="text-orange"><i class="fa-solid fa-school"></i> INFRAESTRUCTURA</h6>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 d-flex my-3" style="
+                                align-items: center;
+                            ">
+                                    <div class="mx-auto">
+                                      <a href="dotacion.html" class="btn btn-primary-2 btn-lg" role="button">VER PROYECTO</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- PROMIE -->
+                    <br>
+                    <div class="card rounded-0">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-8 d-flex stat my-3" style="
+                                padding-left: 60px;">
+                                    <div>
+                                        <h6 class="text-muted">Unidad ejecutora: <span class="hover-UE" aria-label="Ministerio de Educación y Ciencias" data-microtip-position="top" role="tooltip">MEC</span></h6>
+                                        <h3 class="font-weight-bold">Mejora de infraestructura y equipamiento de colegios técnicos - ProMIE
+                                        </h3>
+                                        <div class="row">
+                                            <div class="col-md-auto">
+                                                <h6 class="text-success"><i class="icon ion-md-arrow-dropup-circle"></i> ACTIVO</h6>
+
+                                            </div>
+                                            <div class="col-md-auto">
+                                                <h6 class="text-orange"><i class="fa-solid fa-school"></i> INFRAESTRUCTURA</h6>
+
+                                            </div>
+                                        </div>                                      </div>
+                                </div>
+                                <div class="col-sm-4 d-flex my-3" style="
+                                align-items: center;
+                            ">
+                                    <div class="mx-auto">
+                                      <a href="promie.html" class="btn btn-primary-2 btn-lg" role="button">VER PROYECTO</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TAPE -->
+                    <br>
+                    <div class="card rounded-0">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-8 d-flex stat my-3" style="
+                                padding-left: 60px;">
+                                    <div>
+                                        <h6 class="text-muted">Unidad ejecutora: <span class="hover-UE" aria-label="Ministerio de Educación y Ciencias" data-microtip-position="top" role="tooltip">MEC</span></h6>
+                                        <h3 class="font-weight-bold">Tejiendo apoyos para la excelencia educativa - TAPE
+                                        </h3>
+                                        <div class="row">
+                                            <div class="col-md-auto">
+                                                <h6 class="text-success"><i class="icon ion-md-arrow-dropup-circle"></i> ACTIVO</h6>
+
+                                            </div>
+                                            <div class="col-md-auto">
+                                                <h6 class="text-orange"><i class="fa-solid fa-school"></i> INFRAESTRUCTURA</h6>
+
+                                            </div>
+                                        </div>                                      </div>
+                                </div>
+                                <div class="col-sm-4 d-flex my-3" style="
+                                align-items: center;
+                            ">
+                                    <div class="mx-auto">
+                                      <a href="tape.html" class="btn btn-primary-2 btn-lg" role="button">VER PROYECTO</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FASE 1 -->
+                    <br>
+                    <div class="card rounded-0">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-8 d-flex stat my-3" style="
+                                padding-left: 60px;">
+                                    <div>
+                                        <h6 class="text-muted">Unidad ejecutora: <span class="hover-UE" aria-label="Ministerio de Educación y Ciencias" data-microtip-position="top" role="tooltip">MEC</span></h6>
+                                        <h3 class="font-weight-bold">Fase I de la atención a la primera infancia, educación inicial
+                                        </h3>
+                                        <div class="row">
+                                            <div class="col-md-auto">
+                                                <h6 class="text-primary"><i class="icon ion-md-arrow-dropup-circle"></i> FINALIZADO</h6>
+
+                                            </div>
+                                            <div class="col-md-auto">
+                                                <h6 class="text-orange"><i class="fa-solid fa-baby"></i> PRIMERA INFANCIA</h6>
+
+                                            </div>
+                                        </div>                                    </div>
+                                </div>
+                                <div class="col-sm-4 d-flex my-3" style="
+                                align-items: center;
+                            ">
+                                    <div class="mx-auto">
+                                      <a href="fase_I.html" class="btn btn-primary-2 btn-lg" role="button">VER PROYECTO</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                     <!-- EXPANSION -->
+                    <br>
+                    <div class="card rounded-0">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-8 d-flex stat my-3" style="
+                                padding-left: 60px;">
+                                    <div>
+                                        <h6 class="text-muted">Unidad ejecutora: <span class="hover-UE" aria-label="Ministerio de Educación y Ciencias" data-microtip-position="top" role="tooltip">MEC</span></h6>
+                                        <h3 class="font-weight-bold">Expansión de la atención a la primera infancia, educación inicial
+                                        </h3>
+                                        <div class="row">
+                                            <div class="col-md-auto">
+                                                <h6 class="text-success"><i class="icon ion-md-arrow-dropup-circle"></i> ACTIVO</h6>
+
+                                            </div>
+                                            <div class="col-md-auto">
+                                                <h6 class="text-orange"><i class="fa-solid fa-baby"></i> PRIMERA INFANCIA</h6>
+
+                                            </div>
+                                        </div>                                      </div>
+                                </div>
+                                <div class="col-sm-4 d-flex my-3" style="
+                                align-items: center;
+                            ">
+                                    <div class="mx-auto">
+                                      <a href="expansion-mec.html" class="btn btn-primary-2 btn-lg" role="button">VER PROGRAMA</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- MINNA -->
+                    <br>
+                    <div class="card rounded-0">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-8 d-flex stat my-3" style="
+                                padding-left: 60px;">
+                                    <div>
+                                        <h6 class="text-muted">Unidad ejecutora: <span class="hover-UE" aria-label="Ministerio de la Niñez y la Adolescencia" data-microtip-position="top" role="tooltip">MINNA</span></h6>
+                                        <h3 class="font-weight-bold">Atención a la primera infancia, fase maternal
+                                        </h3>
+                                        <div class="row">
+                                            <div class="col-md-auto">
+                                                <h6 class="text-success"><i class="icon ion-md-arrow-dropup-circle"></i> ACTIVO</h6>
+
+                                            </div>
+                                            <div class="col-md-auto">
+                                                <h6 class="text-orange"><i class="fa-solid fa-baby"></i> PRIMERA INFANCIA</h6>
+
+                                            </div>
+                                        </div>                                      </div>
+                                </div>
+                                <div class="col-sm-4 d-flex my-3" style="
+                                align-items: center;
+                            ">
+                                    <div class="mx-auto">
+                                      <a href="minna.html" class="btn btn-primary-2 btn-lg" role="button">VER PROYECTO</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- BECAL -->
+                    <br>
+                    <div class="card rounded-0">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-8 d-flex stat my-3" style="
+                                padding-left: 60px;">
+                                    <div>
+                                        <h6 class="text-muted">Unidad ejecutora: <span class="hover-UE" aria-label="Ministerio de Economía y Finanzas" data-microtip-position="top" role="tooltip">MEF</span> | Instituciones responsables: <span class="hover-others" aria-label="Ministerio de Educación y Ciencias" data-microtip-position="top" role="tooltip">MEC</span>, <span class="hover-others" aria-label="Secretaría Técnica de Planificación" data-microtip-position="top" role="tooltip">STP</span> y <span aria-label="Consejo Nacional de Ciencia y Tecnología" data-microtip-position="top" role="tooltip" class="hover-others">CONACYT</span></h6>
+                                        <!-- <h6 class="text-muted">Ministerio de Educación y Ciencias - MEC</h6>
+                                        <h6 class="text-muted">Secretaría Técnica de Planificación - STP</h6>
+                                        <h6 class="text-muted">Consejo Nacional de Ciencia y Tecnología - CONACYT</h6> -->
+                                        <h3 class="font-weight-bold">Becas de posgrado en el exterior, BECAL
+                                        </h3>
+                                        <div class="row">
+                                            <div class="col-md-auto">
+                                                <h6 class="text-success"><i class="icon ion-md-arrow-dropup-circle"></i> ACTIVO</h6>
+
+                                            </div>
+                                            <div class="col-md-auto">
+                                                <h6 class="text-orange"><i class="icon ion-md-school"></i> BECAS</h6>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 d-flex my-3" style="
+                                align-items: center;
+                            ">
+                                    <div class="mx-auto">
+                                      <a href="becal_I.html" class="btn btn-primary-2 btn-lg" role="button">VER PROGRAMA</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- BECAL II -->
+                    <br>
+                    <div class="card rounded-0">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-8 d-flex stat my-3" style="
+                                padding-left: 60px;">
+                                    <div>
+                                        <h6 class="text-muted">Unidad ejecutora: <span class="hover-UE" aria-label="Ministerio de Economía y Finanzas" data-microtip-position="top" role="tooltip">MEF</span> | Instituciones responsables: <span class="hover-others" aria-label="Ministerio de Educación y Ciencias" data-microtip-position="top" role="tooltip">MEC</span>, <span class="hover-others" aria-label="Secretaría Técnica de Planificación" data-microtip-position="top" role="tooltip">STP</span> y <span aria-label="Consejo Nacional de Ciencia y Tecnología" data-microtip-position="top" role="tooltip" class="hover-others">CONACYT</span></h6>
+                                        <h3 class="font-weight-bold">Becas de posgrado en el exterior, BECAL II
+                                        </h3>
+                                        <div class="row">
+                                            <div class="col-md-auto">
+                                                <h6 class="text-success"><i class="icon ion-md-arrow-dropup-circle"></i> ACTIVO</h6>
+
+                                            </div>
+                                            <div class="col-md-auto">
+                                                <h6 class="text-orange"><i class="icon ion-md-school"></i> BECAS</h6>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 d-flex my-3" style="
+                                align-items: center;
+                            ">
+                                    <div class="mx-auto">
+                                      <a href="becal_II.html" class="btn btn-primary-2 btn-lg" role="button">VER PROGRAMA</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- PROCIENCIA -->
+                    <br>
+                    <div class="card rounded-0"> 
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-8 d-flex stat my-3" style="
+                                padding-left: 60px;">
+                                    <div>
+                                        <h6 class="text-muted">Unidad ejecutora: <span class="hover-UE" aria-label="Consejo Nacional de Ciencia y Tecnología" data-microtip-position="top" role="tooltip">CONACYT</span></h6>
+                                        <h3 class="font-weight-bold">PROCIENCIA
+                                        </h3>
+                                        <div class="row">
+                                            <div class="col-md-auto">
+                                                <h6 class="text-primary"><i class="icon ion-md-arrow-dropup-circle"></i> FINALIZADO</h6>
+
+                                            </div>
+                                            <div class="col-md-auto">
+                                                <h6 class="text-orange"><i class="fa-solid fa-flask"></i> INVESTIGACIÓN Y DESARROLLO (I+D)</h6>
+
+                                            </div>
+                                        </div>                                    
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 d-flex my-3" style="
+                                align-items: center;
+                            ">
+                                    <div class="mx-auto">
+                                      <a href="prociencia_I.html" class="btn btn-primary-2 btn-lg" role="button">VER PROGRAMA</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- PROCIENCIA II -->
+                    <br>
+                    <div class="card rounded-0">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-8 d-flex stat my-3" style="
+                                padding-left: 60px;">
+                                    <div>
+                                        <h6 class="text-muted">Unidad ejecutora: <span class="hover-UE" aria-label="Consejo Nacional de Ciencia y Tecnología" data-microtip-position="top" role="tooltip">CONACYT</span></h6>
+                                        <h3 class="font-weight-bold">PROCIENCIA II
+                                        </h3>
+                                        <div class="row">
+                                            <div class="col-md-auto">
+                                                <h6 class="text-success"><i class="icon ion-md-arrow-dropup-circle"></i> ACTIVO</h6>
+
+                                            </div>
+                                            <div class="col-md-auto">
+                                                <h6 class="text-orange"><i class="fa-solid fa-flask"></i> INVESTIGACIÓN Y DESARROLLO (I+D)</h6>
+
+                                            </div>
+                                        </div>                                     </div>
+                                </div>
+                                <div class="col-sm-4 d-flex my-3" style="
+                                align-items: center;
+                            ">
+                                    <div class="mx-auto">
+                                      <a href="prociencia_II.html" class="btn btn-primary-2 btn-lg" role="button">VER PROGRAMA</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CENSAL -->
+                    <br>
+                    <div class="card rounded-0">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-8 d-flex stat my-3" style="
+                                padding-left: 60px;">
+                                    <div>
+                                        <h6 class="text-muted">Unidad ejecutora: <span class="hover-UE" aria-label="Ministerio de Educación y Ciencias" data-microtip-position="top" role="tooltip">MEC</span></h6>
+                                        <h3 class="font-weight-bold">Evaluación censal de logros académicos a estudiantes - SNEPE
+                                        </h3>
+                                        <div class="row">
+                                            <div class="col-md-auto">
+                                                <h6 class="text-primary"><i class="icon ion-md-arrow-dropup-circle"></i> FINALIZADO</h6>
+
+                                            </div>
+                                            <div class="col-md-auto">
+                                                <h6 class="text-orange"><i class="icon ion-md-book"></i> EVALUACIÓN</h6>
+
+                                            </div>
+                                        </div>                                    </div>
+                                </div>
+                                <div class="col-sm-4 d-flex my-3" style="
+                                align-items: center;
+                            ">
+                                    <div class="mx-auto">
+                                      <a href="censal.html" class="btn btn-primary-2 btn-lg" role="button">VER PROYECTO</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                                        <!-- ESTANDARIZADAS -->
+                                        <br>
+                                        <div class="card rounded-0">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-sm-8 d-flex stat my-3" style="
+                                                    padding-left: 60px;">
+                                                        <div>
+                                                            <h6 class="text-muted">Unidad ejecutora: <span class="hover-UE" aria-label="Ministerio de Educación y Ciencias" data-microtip-position="top" role="tooltip">MEC</span></h6>
+                                                            <h3 class="font-weight-bold">Evaluaciones estandarizadas de estudiantes
+                                                            </h3>
+                                                            <div class="row">
+                                                                <div class="col-md-auto">
+                                                                    <h6 class="text-success"><i class="icon ion-md-arrow-dropup-circle"></i> ACTIVO</h6>
+                    
+                                                                </div>
+                                                                <div class="col-md-auto">
+                                                                    <h6 class="text-orange"><i class="icon ion-md-book"></i> EVALUACIÓN</h6>
+                    
+                                                                </div>
+                                                            </div>                                      </div>
+                                                    </div>
+                                                    <div class="col-sm-4 d-flex my-3" style="
+                                                    align-items: center;
+                                                ">
+                                                        <div class="mx-auto">
+                                                          <a href="estandarizadas.html" class="btn btn-primary-2 btn-lg" role="button">VER PROGRAMA</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                    <!-- ANEAES -->
+                    <br>
+                    <div class="card rounded-0">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-8 d-flex stat my-3" style="
+                                padding-left: 60px;">
+                                    <div>
+                                        <h6 class="text-muted">Unidad ejecutora: <span class="hover-UE" aria-label="Agencia Nacional de Evaluación y Acreditación de la Educación Superior" data-microtip-position="top" role="tooltip">ANEAES</span></h6>
+                                        <h3 class="font-weight-bold">Evaluación de la calidad de la educación superior 
+                                        </h3>
+                                        <div class="row">
+                                            <div class="col-md-auto">
+                                                <h6 class="text-success"><i class="icon ion-md-arrow-dropup-circle"></i> ACTIVO</h6>
+
+                                            </div>
+                                            <div class="col-md-auto">
+                                                <h6 class="text-orange"><i class="icon ion-md-book"></i> EVALUACIÓN</h6>
+
+                                            </div>
+                                        </div>                                    </div>
+                                </div>
+                                <div class="col-sm-4 d-flex my-3" style="
+                                align-items: center;
+                            ">
+                                    <div class="mx-auto">
+                                      <a href="aneaes.html" class="btn btn-primary-2 btn-lg" role="button">VER PROGRAMA</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- PNTE -->
+                    <br>
+                    <div class="card rounded-0">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-8 d-flex stat my-3" style="
+                                padding-left: 60px;">
+                                    <div>
+                                        <h6 class="text-muted">Unidad ejecutora: <span class="hover-UE" aria-label="Ministerio de Educación y Ciencias" data-microtip-position="top" role="tooltip">MEC</span> | Instituciones responsables: <span class="hover-others" aria-label="Ministerio de Economía y Finanzas" data-microtip-position="top" role="tooltip">MEF</span></h6>
+                                        <h3 class="font-weight-bold">Plan nacional de transformación educativa - PNTE
+                                        </h3>
+                                        <div class="row">
+                                            <div class="col-md-auto">
+                                                <h6 class="text-primary"><i class="icon ion-md-arrow-dropup-circle"></i> FINALIZADO</h6>
+
+
+                                            </div>
+                                            <div class="col-md-auto">
+                                                <h6 class="text-orange"><i class="icon ion-md-book"></i> EVALUACIÓN</h6>
+
+                                            </div>
+                                            <div class="col-md-auto">
+                                                <h6 class="text-orange"><i class="icon ion-md-contacts"></i> REDES</h6>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 d-flex my-3" style="
+                                align-items: center;
+                            ">
+                                    <div class="mx-auto">
+                                      <a href="transformacion.html" class="btn btn-primary-2 btn-lg" role="button">VER PROYECTO</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- APOYO -->
+                    <br>
+                    <div class="card rounded-0">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-8 d-flex stat my-3" style="
+                                padding-left: 60px;">
+                                    <div>
+                                        <h6 class="text-muted">Unidad ejecutora: <span class="hover-UE" aria-label="Ministerio de Educación y Ciencias" data-microtip-position="top" role="tooltip">MEC</span></h6>
+                                        <h3 class="font-weight-bold">Apoyo operativo de proyectos del MEC
+                                        </h3>
+                                        <div class="row">
+                                            <div class="col-md-auto">
+                                                <h6 class="text-success"><i class="icon ion-md-arrow-dropup-circle"></i> ACTIVO</h6>
+
+                                            </div>
+                                            <div class="col-md-auto">
+                                                <h6 class="text-orange"><i class="fa-solid fa-people-arrows"></i> GESTIÓN TRANSVERSAL </h6>
+
+                                            </div>
+                                        </div>                                      </div>
+                                </div>
+                                <div class="col-sm-4 d-flex my-3" style="
+                                align-items: center;
+                            ">
+                                    <div class="mx-auto">
+                                      <a href="apoyo.html" class="btn btn-primary-2 btn-lg" role="button">VER PROYECTO</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <br>
+                    <!-- <br>
+                    <div class="card rounded-0">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-8 d-flex stat my-3" style="
+                                padding-left: 60px;">
+                                    <div>
+                                        <h6 class="text-muted">Ministerio de Tecnologías de la Información y Comunicación - MITIC</h6>
+                                        <h3 class="font-weight-bold">Conectividad en escuelas y unidades de gestión en Paraguay</h3>
+                                        <h6 class="text-success"><i class="icon ion-md-arrow-dropup-circle"></i> ACTIVO</h6>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 d-flex my-3" style="
+                                align-items: center;
+                            ">
+                                    <div class="mx-auto">
+                                      <a href="tic-mitic.html" class="btn btn-primary-2 btn-lg" role="button">VER PROYECTO</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="card rounded-0">
+                      <div class="card-body">
+                          <div class="row">
+                              <div class="col-sm-8 d-flex stat my-3" style="
+                              padding-left: 60px;">
+                                  <div>
+                                      <h6 class="text-muted">Ministerio de Educación y Ciencias - MEC</h6>
+                                      <h3 class="font-weight-bold">Expansión de la atención educativa oportuna - Primera infancia</h3>
+                                      <h6 class="text-success"><i class="icon ion-md-arrow-dropup-circle"></i> ACTIVO</h6>
+                                  </div>
+                              </div>
+                              <div class="col-sm-4 d-flex my-3" style="
+                              align-items: center;
+                          ">
+                                    <div class="mx-auto">
+                                      <a href="expansion-mec.html" class="btn btn-primary-2 btn-lg" role="button">VER PROYECTO</a>
+                                    </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div> -->
+                </div>
+              </div></section>
+        </div>
+    </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        function zoom() {
+            document.body.style.zoom = "100%" 
+        }
+</script>
+<script>
+    function animate(obj, initVal, lastVal, duration) {
+       let startTime = null;
+    let currentTime = Date.now();
+    const step = (currentTime ) => {
+    if (!startTime) {
+       startTime = currentTime ;
+    }
+
+    const progress = Math.min((currentTime - startTime)/ duration, 1);
+
+    obj.innerHTML = Math.floor(progress * (lastVal - initVal) + initVal);
+
+    if (progress < 1) {
+       window.requestAnimationFrame(step);
+    } else {
+          window.cancelAnimationFrame(window.requestAnimationFrame(step));
+       }
+    };
+       window.requestAnimationFrame(step);
+    }
+    let text1 = document.getElementById('0101');
+    let text2 = document.getElementById('0102');
+    let text3 = document.getElementById('0103');
+    let text4 = document.getElementById('0104');
+    const load = () => {
+       animate(text1, 0, 10, 4500);
+       animate(text2, 0, 8, 4500);
+       animate(text3, 0, 700, 4500);
+       animate(text4, 0, 20, 4500);
+    }
+ </script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js" integrity="sha256-R4pqcOYV8lt7snxMQO/HSbVCFRPMdrhAFMH+vr9giYI=" crossorigin="anonymous"></script>
+        <script>
+            var ctx = document.getElementById('myChart').getContext('2d');
+            var myChart = new Chart(ctx, { 
+                type: 'bar',
+                data: {
+                    labels: ['Feb 2020', 'Mar 2020', 'Abr 2020', 'May 2020'],
+                    datasets: [{
+                        label: 'Nuevos usuarios',
+                        data: [50, 100, 150, 200],
+                        backgroundColor: [
+                            '#12C9E5',  
+                            '#12C9E5',
+                            '#12C9E5',
+                            '#111B54'
+                        ],
+                        maxBarThickness: 30,
+                        maxBarLength: 2
+                    }]
+                },
+                options: {
+                    scales: {
+                        yAxes: [{
+                            ticks: {
+                                beginAtZero: true
+                            }
+                        }]
+                    }
+                }
+            });
+            </script>
+
+
+</div>
+
+
+
+</body>
+
+</html>

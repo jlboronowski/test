@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/microtip.css">
+
+
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,700&display=swap" rel="stylesheet">
+
+    <!-- Ionic icons -->
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+
+    <title>FEEI | Programa: INFRA 822</title>
+    <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico">
+</head>
+
+<body onload="zoom()">
+    <div class="d-flex" id="content-wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-container" class="bg-primary">
+            <div class="logo">
+                <h4 class="text-light font-weight-bold mb-0">Tablero de seguimiento</h4>
+            </div>
+            <div class="menu">
+                <a href="index.html#projects" class="d-block text-light p-3 border-0"><i class="icon ion-md-arrow-back lead mr-2"></i>
+                    Volver</a>
+
+                <!-- <a href="#" class="d-block text-light p-3 border-0"><i class="icon ion-md-people lead mr-2"></i>
+                    Usuarios</a>
+
+                <a href="#" class="d-block text-light p-3 border-0"><i class="icon ion-md-stats lead mr-2"></i>
+                    Estadísticas</a>
+                <a href="#" class="d-block text-light p-3 border-0"><i class="icon ion-md-person lead mr-2"></i>
+                    Perfil</a>
+                <a href="#" class="d-block text-light p-3 border-0"> <i class="icon ion-md-settings lead mr-2"></i>
+                    Configuración</a> -->
+            </div>
+        </div>
+        <!-- Fin sidebar -->
+
+        <div class="w-100">
+
+         <!-- Navbar -->
+         <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+            <div class="container">
+    
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+    
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <form class="form-inline position-relative d-inline-block my-2">
+                  <input class="form-control" type="hidden" placeholder="Buscar" aria-label="Buscar">
+                  <!-- <button class="btn position-absolute btn-search" type="submit"><i class="icon ion-md-search"></i></button> -->
+                </form>
+                <img src="assets/img/logo.jpg" alt="logo" width="100" height="50"/>
+                <!-- <img src="assets/img/logo-stp.png" alt="logo" width="180" style="
+                margin-left: 40px;
+            " height="70" /> -->
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                  <li class="nav-item dropdown">
+                    <!-- <a class="nav-link text-dark dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <img src="assets/img/profile.jpg" class="img-fluid rounded-circle avatar mr-2"
+                      alt="https://generated.photos/" />
+                    Francisco Aguilera
+                    </a> -->
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="#">Mi perfil</a>
+                      <!-- <a class="dropdown-item" href="#">Suscripciones</a> -->
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="index.html">Cerrar sesión</a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <!-- Fin Navbar -->
+
+        <!-- Page Content -->
+        <div id="content" class="bg-white w-100">
+            <section class="bg-light py-3">
+              <br>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-9 col-md-8">
+                            <h4 class="font-weight-bold mb-0">Mejora de infraestructura en 822 establecimientos escolares</h4>
+                            <h5 class="text-muted">Unidad ejecutora: <span class="hover-UE" aria-label="Ministerio de Educación y Ciencias" data-microtip-position="top" role="tooltip">MEC</span></h5>
+                          </div>
+                          <div class="col-lg-3 col-md-4 d-flex">
+                            <a href="assets/data/Resumen_Ejecutivo_Infra_822.pdf" class="btn btn-primary w-100 align-self-center" role="button" download>Descargar resumen semestral</a>
+                          </div>
+                      </div>
+                  </div>
+              </section>
+              <section class="bg-light py-3">
+                <br>
+                  <div class="container">
+                      <div class="row">
+                          <div class="col-lg-9 col-md-8">
+                            <iframe title="Report Section" width="1140" height="700" src="https://app.powerbi.com/view?r=eyJrIjoiMGQyM2QzMzQtNWI1Yi00ZDM2LWJmYmUtNGUyMzg3OGFjNGQ0IiwidCI6IjZlNDQ2NmVhLTkwN2ItNDhjMS1hOWI2LTNlNmE3MjBlNGNjNyJ9" frameborder="0" allowFullScreen="true"></iframe>                            <!-- <h3 style="
+                            padding-left: 450px;
+                            color: #f26721;
+                        ">Avance de principales productos</h3> -->
+                        <iframe title="infra_822_tab_barra_3" width="1140" height="700" src="https://app.powerbi.com/view?r=eyJrIjoiYzNmZjVhNDAtMGNiYi00NDhhLWFiYTQtMjUzODkwMDY2ZmM5IiwidCI6IjZlNDQ2NmVhLTkwN2ItNDhjMS1hOWI2LTNlNmE3MjBlNGNjNyJ9" frameborder="0" allowFullScreen="true"></iframe>                            <br>
+                            <div style="background-color: white;position: relative;
+                            left: 0;width: 1140px;height: 293px; color: black; top: -300px;">
+                                <h4 style="font-family: Segoe UI;
+                                font-weight: lighter; text-align: center;font-size: 28px;color: black;">Principales consideraciones al 31/12/2023</h4>
+                                <br>
+                                <ul class="list-group">
+                                    <li class="list-group-item">El 14% de las obras siguen sin concluir: 86 deben reiniciar y 24 están en construcción. Con nuevas recesiones y proyectando nuevos llamados el retraso es significativo.</li>
+                                    <li class="list-group-item">301 establecimientos con 519 espacios aún no cuentan con la provisión de equipamientos</li>
+                                    <li class="list-group-item">Las auditorías de 2019 a 2022 fueron entregadas a finales de agosto del 2023. El retraso no permite tomar medidas de mejoras y no se controla la calidad de las auditorías contratadas</li>
+                                    <li class="list-group-item">No se formulan ni aplican medidas de mejora en la gestión y control de obras. Se recomienda considerar las observaciones para los demás proyectos de infraestructura, como la informatización y un registro de control del proceso de seguimiento a los contratos como también el cumplimiento de la fiscalización y supervisión de obras.</li>
+                                </ul>
+                            </div>
+
+                          <br>
+                          <div class="datalos" style="position: relative; top: -120px; max-height: 2756px;">
+                              <div class="productos" style="position: relative; ">
+                                <h3 style="/* padding-left: 450px; */color: #f26721;text-align: center;width: 1140px;">Avance de principales productos</h3>                                  <br>
+                                <iframe title="infra_822-productos" width="1140" height="700" src="https://app.powerbi.com/view?r=eyJrIjoiN2VjMmM1MjEtYzY3My00Y2M1LWE3OTAtMTg3NDBlZDMxZTM0IiwidCI6IjZlNDQ2NmVhLTkwN2ItNDhjMS1hOWI2LTNlNmE3MjBlNGNjNyJ9" frameborder="0" allowFullScreen="true"></iframe>                               <div class="actis" style="position: relative;background-color: white;width: 1140px;top: -76px;">
+                                  <h3 style="padding-left: 450px;color: #f26721;">Avance de actividades</h3>
+                                  <br>
+                                  <iframe title="Report Section" width="1140" height="700" src="https://app.powerbi.com/view?r=eyJrIjoiM2U4YTMyNWMtNTNlNS00ZTEyLTg5ZjYtYTcxZjU2ZTVjZTZlIiwidCI6IjZlNDQ2NmVhLTkwN2ItNDhjMS1hOWI2LTNlNmE3MjBlNGNjNyJ9" frameborder="0" allowFullScreen="true"></iframe>                                </div>
+                              <!-- <div class="compo" style="position: relative;background-color: white;width: 1140px;top: -200px;">
+                                  <h3 style="padding-left: 450px;color: #f26721;">Avance de componentes</h3>
+                                  <br>
+                                  <iframe title="infra_822-componentes - Componentes" width="1140" height="1280" src="https://app.powerbi.com/view?r=eyJrIjoiM2IxYTAxZmEtZDJlOC00MDYwLWFmZGUtZmI1Zjg2NTQxMjIzIiwidCI6IjZlNDQ2NmVhLTkwN2ItNDhjMS1hOWI2LTNlNmE3MjBlNGNjNyJ9" frameborder="0" allowFullScreen="true"></iframe>                              </div> -->
+                          </div>
+                          <br>
+                          <br>
+                      <!-- <br><br><br>
+                      <div style="position: relative;top: -170px;width: 1140px;background-color: white;">
+                          <br><br>
+                          <h4 style="font-family: Segoe UI;
+                          font-weight: lighter; text-align: center;font-size: 28px;color: black;">Resumen de metas físicas y recursos ejecutados por componentes y subcomponentes, acumulados en guaraníes al 31/12/2021</h4>
+                          <br>
+                          <iframe title="becal_I_tab_matrix - Matrix" width="1140" height="700" src="https://app.powerbi.com/view?r=eyJrIjoiYmY1ZWVhNDEtZmQ3OS00ZDhlLWI2NzUtMGFhMzYzMWI3NWM1IiwidCI6IjZlNDQ2NmVhLTkwN2ItNDhjMS1hOWI2LTNlNmE3MjBlNGNjNyJ9" frameborder="0" allowFullScreen="true"></iframe>                         <br>
+                      </div> -->
+                      </div>
+                        <!-- <div class="col-lg-3 col-md-4 d-flex">
+                          <button class="btn btn-primary w-100 align-self-center">Descargar reporte</button>
+                        </div> -->
+                    </div>
+                </div>
+            </section>
+            <!-- <div style="position: inherit;margin-left: 65px;">
+                <h4> Hola</h4>
+            </div> -->
+      </div>
+
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+<script type="text/javascript">
+        function zoom() {
+            document.body.style.zoom = "90%" 
+        }
+</script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js" integrity="sha256-R4pqcOYV8lt7snxMQO/HSbVCFRPMdrhAFMH+vr9giYI=" crossorigin="anonymous"></script>
+        <script>
+            var ctx = document.getElementById('myChart').getContext('2d');
+            var myChart = new Chart(ctx, { 
+                type: 'bar',
+                data: {
+                    labels: ['Feb 2020', 'Mar 2020', 'Abr 2020', 'May 2020'],
+                    datasets: [{
+                        label: 'Nuevos usuarios',
+                        data: [50, 100, 150, 200],
+                        backgroundColor: [
+                            '#12C9E5',  
+                            '#12C9E5',
+                            '#12C9E5',
+                            '#111B54'
+                        ],
+                        maxBarThickness: 30,
+                        maxBarLength: 2
+                    }]
+                },
+                options: {
+                    scales: {
+                        yAxes: [{
+                            ticks: {
+                                beginAtZero: true
+                            }
+                        }]
+                    }
+                }
+            });
+            </script>
+</body>
+
+</html>
